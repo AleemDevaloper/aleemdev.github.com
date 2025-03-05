@@ -1,0 +1,27 @@
+.skills{
+    overflow-x: hidden;
+    h2{
+        font-size: 26px;
+        color: #adadad;
+    }
+    h1{
+        color: #fff;
+        font-size: 50px;
+        span{
+            background: linear-gradient( 180deg , #c1ff12 , #fff);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    .slick-dots li button:before {
+        color: #9a9a9a; /* Change this to your desired color */
+      }
+      .slick-dots{
+         bottom: -50px !important;
+      }
+      /* Change the color of the active dot */
+      .slick-dots li.slick-active button:before {
+        color: #c1ff12; /* Change this to your desired color */
+      }
+   
+}

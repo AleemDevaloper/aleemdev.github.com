@@ -1,0 +1,85 @@
+.wrapper{
+    background: none !important;
+}
+.menupage{
+    position: relative;
+    top: 0;
+    left: -100%;
+    // background-color: black;
+    height: 100vh;
+    width: 100vw;
+    animation: move 1s forwards;
+    @keyframes move{
+        0%{
+            left: -100%;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    
+      ul{
+        list-style: none;
+        display: flex;
+        margin-bottom: 0rem !important;
+        li{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            .btn{
+                text-decoration: none;
+                border: 0px;
+                border-radius: 0px;
+            }
+            svg{
+                animation: svg2 3s linear 1;
+            }
+            path{
+                transition: all 1.5s ease;
+                animation: svg 2s linear infinite;
+                visibility: visible; 
+                translate: none; 
+                rotate: none; 
+                scale: none; 
+                opacity: 1; 
+                stroke: #98ca10;
+            }
+            
+            @keyframes svg2 {
+                0%{
+                    transform: translate(0px, -10.6667px);
+                }
+                
+                100%{
+                    transform: translate(0px, 0px);
+                }
+                
+            }
+            
+            h1{
+                color: #fff;
+                text-decoration: none;
+                transition: all .5s ease;
+                font-size: 6.38vw;
+                text-transform: uppercase;
+            }
+        }
+        li:hover{
+            h1{
+                color: #c1ff12;
+                animation: tex 1s linear 1;
+            }
+            @keyframes tex {
+                0%{
+                    transform: translate(-1.3888888889vw, 0vw);
+                    left: -100%;
+                }
+                
+                100%{
+                    transform: translate(0vw, 0vw);
+                    left: 100%; 
+                }
+            }
+        }
+      }
+}

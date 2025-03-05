@@ -1,0 +1,177 @@
+.projects{
+    position: relative;
+    top: 0;
+    left: -100%;
+    background-color: black;
+    animation: move 1s forwards;
+    scroll-behavior: smooth;
+    @keyframes move{
+        0%{
+            left: -100%;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    .line1{
+        background: #8E8E8E;
+        width: 2px;
+        position: fixed;
+        left: 5%;
+        height: 100%;
+        z-index: 3;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    .line2{
+        background: #8E8E8E;
+        width: 2px;
+        position: fixed;
+        right: 5%;
+        height: 100%;
+        z-index: 3;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    .center{
+
+        left: 6%;
+        right: 6%;
+    }
+   
+      .art{
+         .container{
+              @media (min-width: 1920px) {
+                h1{
+                    font-size: 5vw;
+              }
+                
+              }
+         }
+            border: 1px solid #8E8E8E;
+            border-radius: 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+         
+         h1{
+            color: white;
+            font-family:  OCMikola, sans-serif;
+            font-size: 9.1vw;
+        }
+      }
+      .project-section{
+        padding: 10px 0px;
+        margin: 20px 0px;
+        border: 1px solid #8E8E8E;
+        border-radius: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        .border-grey{
+            border: 2px solid #8E8E8E;
+            border-radius: 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px; 
+        }
+        .col-lg-5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        button{
+            background-color:  transparent;
+            border: 1px solid #8E8E8E;
+            color: #8E8E8E;
+            font-family:  OCMikola, sans-serif;
+            font-size: 20px;
+            padding: 10px 40px;
+            border-radius: 10px;
+        }
+        button:hover{
+            color: #c8ff00;
+            border-color: #c8ff00;
+        }
+        h3{
+            color: white;
+            font-family:  OCMikola, sans-serif;
+            font-size: 70px; 
+            @media (max-width: 992px) {
+                font-size: 40px;
+            }
+        }
+        h2{
+            color: white;
+            font-family:  OCMikola, sans-serif;
+            font-size: 60px; 
+            @media (max-width: 992px) {
+                font-size: 30px;
+            }
+        }
+        .row{
+            margin: 40px 0px;
+            padding-left: 20px;
+            @media (max-width: 992px) {
+                padding-left: 0px;
+            }
+            .col-lg-7{
+                border: 1px solid #8E8E8E;
+                border-radius: 0px;
+                border-top: 0px;
+                border-left: 0px;
+                border-bottom: 0px; 
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                @media (max-width: 992px) {
+                    border-right: 0px;
+                }
+                h2{
+                    color: #fff;
+                    font-family:  OCMikola, sans-serif;
+                    font-size: 50px;
+                    @media (max-width: 992px) {
+                        font-size: 40px;
+                    }
+                }
+                p{
+                    color: #8E8E8E;
+                    font-family:  OCMikola, sans-serif;
+                }
+            }
+            .sp{
+                padding-left: 25px;
+                border-right: 0px;
+                border-left: 1px solid #8E8E8E !important;
+                @media (max-width: 992px) {
+                    border-left: 0px !important;
+                    padding-left: 10px;
+                }
+            }
+        }
+       
+      }
+      footer{
+        background: #000;
+        color: #fff;
+        padding: 20px 0px;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i{
+                color: #c8ff00;
+            }
+        }
+      }
+}

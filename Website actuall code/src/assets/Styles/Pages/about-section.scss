@@ -1,0 +1,182 @@
+
+.about-section{
+    position: relative;
+    top: 0;
+    left: -100%;
+    background-color: black;
+    animation: move 1s forwards;
+    scroll-behavior: smooth;
+    .text-main{
+        color: #c1ff12 !important;
+    }
+    @keyframes move{
+        0%{
+            left: -100%;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    .line1{
+        background: #8E8E8E;
+        width: 2px;
+        position: fixed;
+        left: 4%;
+        height: 100%;
+        z-index: 3;
+        @media (max-width: 584px) {
+            display: none;
+            
+        }
+    }
+    .line2{
+        background: #8E8E8E;
+        width: 2px;
+        position: fixed;
+        right: 4%;
+        height: 100%;
+        z-index: 3;
+        @media (max-width: 584px) {
+            display: none;
+            
+        }
+    }
+    .center{
+        left: 7%;
+        right: 7%;
+    }
+    .art{
+        .container{
+             @media (min-width: 1920px) {
+               h1{
+                     font-size: 5vw;
+               }
+             }
+             @media (max-width: 500px) {
+               h1{
+                     font-size: 12vw;
+               }
+                
+             }
+        }
+           border: 1px solid #8E8E8E;
+           border-radius: 0px;
+           border-top: 0px;
+           border-left: 0px;
+           border-right: 0px;
+        
+        h1{
+           color: white;
+           font-family:  OCMikola, sans-serif;
+           font-size: 9.1vw;
+       }
+     }
+      .exp{
+        border: 1px solid #8E8E8E;
+        border-radius: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        p{
+            font-size: 20px;
+        }
+        
+        h2{
+            font-weight: 700;
+        }
+        img{
+            height: 400px !important;
+            width: 400px !important;
+            @media (max-width: 1230px) {
+                height: 300px !important;
+                width: 300px !important;
+                
+            }
+            @media (max-width: 1004px) {
+               width: 500px !important;
+               height: 400px !important;
+                
+            }
+            @media (max-width: 584px) {
+                width: 100% !important;
+                height: 300px !important;
+                 
+             }
+        }
+        
+      }
+      .edu{
+        border: 1px solid #8E8E8E;
+        border-radius: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        .card{
+            background-color: transparent !important;
+            border: 1px solid white;
+            .card-body{
+                color: white;
+                h3{
+                    color: #c1ff12;
+                }
+            }
+        }
+        .card:hover{
+
+            border: 1px solid #c1ff12;
+            
+        }
+      }
+      .contact-a{
+        border: 1px solid #8E8E8E;
+        border-radius: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        ul{
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+           
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 30px;
+                padding: 10px 20px;
+                border-radius: 100%;
+                margin: 20px;
+                border: 1px solid #8E8E8E;
+                i{
+                    color: #8E8E8E;
+                    
+                }
+                @media (max-width: 584px) {
+                    margin: 5px;
+                    
+                }
+            }
+            li:hover{
+                border: 1px solid #c1ff12;
+                i{
+                    color: #c1ff12;
+                }
+            }
+        }
+      }
+      footer{
+        margin-top: 10px;
+        background: #000;
+        color: #fff;
+        padding: 20px 0px;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i{
+                color: #c8ff00;
+            }
+        }
+      }
+}
